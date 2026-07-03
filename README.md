@@ -1,0 +1,9 @@
+# Rifki2020 TDVRP benchmark family (TW-free twin, real Lyon road-network travel times)
+
+Satellite benchmark repository of [MAMUT-routing](https://github.com/ANR-MAMUT/MAMUT-routing) (ANR MAMUT, ANR-22-CE22-0016), mounted there as `benchmarks/TDVRP/Rifki2020`. Self-contained: instances, canonical arrival-time-function (ATF) sidecars and best-known solutions ship together.
+
+This is the **TDVRP twin** of [`MAMUT-routing-TDVRPTW-Rifki2020`](https://github.com/ANR-MAMUT/MAMUT-routing-TDVRPTW-Rifki2020): the same 180 Duration-Minimization instances (6 sizes, 10–60 customers, × 30 ids, named `Rifki-<id>`) with the **time windows removed** — capacity, fleet size, service times, demands, coordinates and the time-dependent travel times are identical, and the ATF sidecars are byte-identical to the TDVRPTW twin's (satellites are self-contained, so they are duplicated here rather than referenced).
+
+Everything else — raw source (Rifki, Chiabaut & Solnon 2020 Lyon data, σ = 100, K = 60 steps of 720 s), the choice of the K = 60 granularity over the finest K = 120 (halved breakpoint counts in the same weight class as the other TD families; the granularities are independent published aggregations, so this is a choice of discretization, not a compression), the arrival-time lower-envelope FIFO restoration (exact MD92, NDCPWLF vertical steps at surviving upward jumps), the deliberate replacement of the original [RCS20] time-window files by Onyr's legacy generated attributes, the deterministic stress-layout coordinates, the all-gzipped sidecar storage, and the "checker defines the objective" rule — is documented in the TDVRPTW twin's README and applies verbatim; per-instance provenance lives in each instance's `metadata`.
+
+Population pipeline: `populate_td_rifki2020` v2. Underlying travel-time data: Rifki, Chiabaut & Solnon (2020); MAMUT-authored curation artifacts under the MIT license; this notice does not relicense the underlying third-party data.
