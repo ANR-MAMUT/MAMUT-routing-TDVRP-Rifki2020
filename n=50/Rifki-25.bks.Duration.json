@@ -1,38 +1,25 @@
 {
     "instance_name": "Rifki-25",
     "routes": [
-        [17, 11, 35, 19, 32],
-        [8, 28, 45, 22, 24],
+        [8, 11, 28, 45],
+        [17, 35, 22, 24, 19, 32],
+        [23, 21, 37, 33, 4, 26, 3],
+        [25, 13, 43, 1],
+        [29, 14, 48, 39, 31, 18],
+        [30, 42, 41, 27, 36, 50, 49],
         [38, 2, 7, 16, 6, 20, 12, 47, 40],
-        [25, 13, 34, 29, 33, 4, 26, 3],
-        [23, 21, 37, 14, 48, 31, 18],
-        [43, 1],
-        [42, 41, 46, 5, 9, 39, 15, 10],
-        [30, 44, 27, 36, 50, 49]
+        [44, 46, 5, 9, 15, 10, 34]
     ],
-    "cost": 13303.0,
+    "cost": 13273.0,
     "metadata": {
-        "source": "kayros 0.2.0.dev0 TD-ACO (seed=1010, time_limit=300.0s)",
-        "validated_by": "mamut-routing-lib td Duration checker",
-        "route_durations": [1183.000000000001, 1186.9999999999993, 2091.0, 2568.0, 1781.9999999999995, 595.0, 2181.0, 1716.0],
-        "route_departure_times": [5036.999999999999, 1821.0000000000007, 831.0, 2361.0, 1784.0000000000005, 1623.0, 233.0, 1113.0],
         "authors": "Florian Rascoussier (0nyr)",
-        "validated_cost": 13303.0,
-        "validated_num_routes": 8,
-        "date": "2026-07-06T05:02:49",
-        "optimality": {
-            "proven": true,
-            "prover": "kayros 0.3.0 lera BPC (HiGHS LP backend)",
-            "certificate": "optimal under checker-exact route costs and standard LP/pricing tolerances, completeness modulo Lera epsilon dominance",
-            "date": "2026-07-07",
-            "arithmetic": "checker-exact-routes",
-            "proven_optimum": 13303.0,
-            "dual_bound": 13302.999999999969,
-            "wall_time_s": 79.06,
-            "time_limit_s": 600.0,
-            "checker": "mamut-routing-lib 0.3.0 td Duration checker",
-            "campaign": "2026-07-07 certification sweep: every Dabia2013/Ari2018/Rifki2020 instance solved by kayros 0.3.0 lera BPC (HiGHS), time limit 600 s, warm-started from the stored best-known solution"
-        }
+        "source": "kayros 0.4.0.dev0 TD-ILS (seed=123, time_limit=300.0s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-08T10:33:11",
+        "route_durations": [1035.0, 1332.0, 1643.999999999999, 1088.0, 2198.0, 1839.0, 2091.0, 2046.0],
+        "route_departure_times": [1595.0, 4495.0, 2017.0, 1130.0, 1440.0, 990.0, 831.0, 39873.0],
+        "validated_cost": 13273.0,
+        "validated_num_routes": 8
     },
     "objective_function": "Duration"
 }

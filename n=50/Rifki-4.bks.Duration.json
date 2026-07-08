@@ -1,38 +1,25 @@
 {
     "instance_name": "Rifki-4",
     "routes": [
+        [1, 26, 39, 36, 30, 13, 33, 15, 46, 7, 23],
+        [2, 32, 47, 31],
         [6, 21, 45, 49, 24, 10],
-        [1, 26, 39, 36, 30, 13, 14, 5, 20, 42, 9, 16],
-        [43, 37, 25, 4, 11, 41, 33, 15, 46, 7, 23],
+        [18, 29, 48, 28, 34],
         [19, 17, 3],
-        [18, 8, 27],
         [35, 44, 40, 12, 50],
-        [38, 29, 48, 28, 22, 34],
-        [2, 32, 47, 31]
+        [38, 8, 27, 25, 37],
+        [43, 11, 4, 41, 14, 5, 20, 42, 9, 16, 22]
     ],
-    "cost": 14319.0,
+    "cost": 14315.0,
     "metadata": {
-        "source": "kayros 0.2.0.dev0 TD-ACO (seed=3141, time_limit=300.0s)",
-        "validated_by": "mamut-routing-lib td Duration checker",
-        "route_durations": [1844.0, 3271.9999999999995, 2702.0, 956.0, 1272.0, 1075.9999999999995, 1710.0, 1487.0],
-        "route_departure_times": [556.0, 861.0000000000005, 1006.9999999999999, 4320.0, 4629.0, 2160.0, 11.000000000000002, 40027.0],
         "authors": "Florian Rascoussier (0nyr)",
-        "validated_cost": 14319.0,
-        "validated_num_routes": 8,
-        "date": "2026-07-06T05:02:51",
-        "optimality": {
-            "proven": true,
-            "prover": "kayros 0.3.0 lera BPC (HiGHS LP backend)",
-            "certificate": "optimal under checker-exact route costs and standard LP/pricing tolerances, completeness modulo Lera epsilon dominance",
-            "date": "2026-07-07",
-            "arithmetic": "checker-exact-routes",
-            "proven_optimum": 14319.0,
-            "dual_bound": 14319.0,
-            "wall_time_s": 72.47,
-            "time_limit_s": 600.0,
-            "checker": "mamut-routing-lib 0.3.0 td Duration checker",
-            "campaign": "2026-07-07 certification sweep: every Dabia2013/Ari2018/Rifki2020 instance solved by kayros 0.3.0 lera BPC (HiGHS), time limit 600 s, warm-started from the stored best-known solution"
-        }
+        "source": "kayros 0.4.0.dev0 TD-ACO+ILS (seed=42, time_limit=300.0s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-08T10:33:11",
+        "route_durations": [2723.9999999999995, 1487.0, 1844.0, 1408.0, 956.0, 1075.9999999999995, 1513.0, 3307.0],
+        "route_departure_times": [940.0000000000003, 40027.0, 556.0, 0.0, 4320.0, 2160.0, 743.0, 1407.0000000000002],
+        "validated_cost": 14315.0,
+        "validated_num_routes": 8
     },
     "objective_function": "Duration"
 }
