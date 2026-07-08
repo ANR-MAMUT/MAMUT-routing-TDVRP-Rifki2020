@@ -2,6 +2,10 @@
 
 All notable changes to the curated `Rifki2020` TDVRP best-known solutions (BKS) are recorded here. Objective: **Duration** (duration minimization — the depot departure time of each route is a decision variable). Costs are the authoritative output of the canonical checker (`mamut_routing_lib.td.check_td_solution`): exact IEEE-754 double arithmetic, no epsilon thresholds, routes in canonical order (sorted by first customer), total summed in that order — so any strict improvement is real. Reminder: vehicle attributes are Onyr's curated ones (see README.md); the TDVRP variant removes the time windows.
 
+## 2026-07-08
+
+67 of 180 BKS improved (mean -0.44%, largest single improvement -1.64%) by a 20,808-run anytime-strategy head-to-head campaign on Grid'5000: kayros 0.4.0.dev0 (TD-ILS, TD-ACO+LS, and an ACO-then-ILS budget split, all over the granular time-dependent local search), per-size time limits (120 s for n<=30, 300 s for n<=60, 600 s for n<=100), seeds {42, 123, 456}, single-threaded runs. Improve-only fold: for each instance the campaign-best solution was re-priced by the canonical checker before writing (checker cost authoritative); stored BKS marked proven optimal were left untouched.
+
 ## 2026-07-07
 
 1 BKS improved by an exact solve — **proven optimal**: Rifki-23 n=20 (5951 → 5950), kayros 0.3.0 lera branch-price-and-cut (HiGHS backend, warm-started from the previous BKS, TL 600 s), from the certification campaign over all families n≤50. The same campaign certified 55 of the other stored TDVRP BKS of this family optimal as stored (all 30 at n=10).
