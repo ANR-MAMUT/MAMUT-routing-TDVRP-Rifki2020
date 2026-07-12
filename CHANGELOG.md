@@ -2,6 +2,10 @@
 
 All notable changes to the curated `Rifki2020` TDVRP best-known solutions (BKS) are recorded here. Objective: **Duration** (duration minimization — the depot departure time of each route is a decision variable). Costs are the authoritative output of the canonical checker (`mamut_routing_lib.td.check_td_solution`): exact IEEE-754 double arithmetic, no epsilon thresholds, routes in canonical order (sorted by first customer), total summed in that order — so any strict improvement is real. Reminder: vehicle attributes are Onyr's curated ones (see README.md); the TDVRP variant removes the time windows.
 
+## 2026-07-12
+
+**6 further BKS stamped proven optimal** by the weekend top-up of the exact re-certification campaign (2026-07-11/12, Grid'5000; time limit 1800 s per run). Protocol unchanged from the 2026-07-10/11 campaign: four independent exact solves (cold and warm starts crossed with the two labeling modes) agreeing on the value, an audited exact-pricing phase in every run, zero checker-infeasible priced columns, and canonical-checker re-validation at stamping time. New certificates: Rifki-3, Rifki-23 (n=10); Rifki-11, Rifki-19, Rifki-24, Rifki-30 (n=20). This family now carries 36 certified TDVRP BKS.
+
 ## 2026-07-11 (second entry)
 
 1 further BKS stamped proven optimal (Rifki-3 n=10): certified by the exact value-jump solver path (mollifier-free), cold and warm solves agreeing, exact-pricing phase audited, where the standard path had timed out. The exact path was validated family-wide the same day: 77/77 agreement with existing certificates and a near-total elimination of checker-infeasible pricing events (1 in 720 runs against 68 before).
