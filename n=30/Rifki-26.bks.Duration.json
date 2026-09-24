@@ -7,16 +7,22 @@
         [2, 30, 23, 9, 16, 21],
         [18, 17, 13, 19, 20]
     ],
-    "cost": 8810.999999999985,
+    "cost": 8811.0,
     "metadata": {
         "source": "kayros 0.2.0.dev0 TD-ACO (seed=1010, time_limit=120.0s)",
         "validated_by": "mamut-routing-lib td Duration checker",
-        "route_durations": [1600.9999999999854, 2244.0, 1607.0, 1791.9999999999998, 1567.0],
-        "route_departure_times": [22082.000000000004, 720.0, 1116.0, 0.0, 720.0],
+        "route_durations": [1601.0, 2244.0, 1607.0, 1792.0, 1567.0],
+        "route_departure_times": [22082.0, 720.0, 1116.0, 0.0, 720.0],
         "authors": "Florian Rascoussier (0nyr)",
-        "validated_cost": 8810.999999999985,
+        "validated_cost": 8811.0,
         "validated_num_routes": 5,
-        "date": "2026-07-06T05:02:37"
+        "date": "2026-07-06T05:02:37",
+        "repriced": {
+            "previous_cost": 8810.999999999985,
+            "checker": "mamut-routing-lib td checker, contract td-fold/2 (lib >= 0.12.0)",
+            "contract": "td-fold/2",
+            "date": "2026-09-24"
+        }
     },
     "objective_function": "Duration"
 }

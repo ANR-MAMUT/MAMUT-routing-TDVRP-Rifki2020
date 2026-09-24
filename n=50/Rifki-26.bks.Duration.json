@@ -17,7 +17,7 @@
         "validated_by": "mamut-routing-lib td Duration checker",
         "date": "2026-07-20T06:44:44",
         "route_durations": [974.0, 3483.0, 1410.0, 1600.0, 875.0, 1925.0, 1407.0, 1343.0],
-        "route_departure_times": [1218.0, 1440.0, 0.0, 266.00000000000006, 1440.0, 1032.0, 0.0, 240.0000000000001],
+        "route_departure_times": [1218.0, 1440.0, 0.0, 266.0, 1440.0, 1032.0, 0.0, 240.0],
         "validated_cost": 13017.0,
         "validated_num_routes": 8
     },
